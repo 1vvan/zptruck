@@ -1,0 +1,100 @@
+/* Footer styles */
+
+.footer{
+    height: 90px;
+    width: 100%;
+    background-color: #393F47;
+    flex: 0 0 auto;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.contact{
+    display: flex;
+    max-width: 200px;
+}
+
+.contact-item{
+    margin: 0px 20px 0px 0px;
+}
+
+.footer-name{
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+    font-family: Raleway;
+    color: #fff;
+    font-weight: 200;
+    max-width: 200px;
+}
+
+.footer-name p{
+    letter-spacing: 2px;
+}
+
+.footer img{
+    height: 50px;
+    width: 50px;
+}
+
+.contact-phone{
+    display: flex;
+    max-width: 300px;
+}
+
+.contact-phone .phones a{
+    font-size: calc(14px + 6 * (100vw - 320px)/(1920-320));
+    color: white;
+    text-decoration: none;
+    transition: all .5s ease 0s ;
+}
+
+.contact-phone .phones a:hover{
+    color: rgb(0, 153, 255);
+    transition: all .5s ease 0s ;
+}
+
+.contact-phone:hover img{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.phones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Oswald;
+    font-weight: 300;
+    letter-spacing: 1.8;
+}
+
+.phones a{
+    margin: 0px 0px 0px 13px;
+}
+
+.phones a:first-child{
+    margin: 0px 0px 14px 13px;
+}
+
+@media (max-width:767px){
+    .contact-item{
+        margin: 0px 8px 0px 0px;
+    }
+    .footer img{
+        margin: 10px 0px 0px 0px;
+        height: 30px;
+        width: 30px;
+    }
+    .phone-img{
+        display: none;
+    }
+
+    .footer-name{
+        display: none;
+    }
+}

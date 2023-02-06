@@ -1,0 +1,142 @@
+@import url('null-style.css');
+
+body{
+    background-color: #2F343A;
+    font-family: Oswald;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content styles */
+
+.main{
+    padding: 70px 0px 0px 0px;
+    flex: 1 0 auto;
+    /* height: 91vh; */
+}
+
+.link-list{
+    display: flex;
+    justify-content: center;
+}
+.link-list-item{
+    margin: 40px 20px;
+}
+.link-item img{
+    height: 100px;
+}
+
+@media (max-width:767px){
+    .link-item img{
+        height: 60px;
+    }
+
+}
+
+.google-form{
+    margin: 30px auto;
+    padding: 18px 0px;
+    border: 2px solid #DAA520;
+    border-radius: 5px;
+    background-color: #393F47;
+}
+.google-form_item{
+    height: 1300px;
+}
+@media (max-width: 767px){
+    .google-form_item{
+        width: 330px;
+        height: 1500px;
+    }
+}
+/* .form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+.form-title {
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: #DAA520;
+}
+.form-item {
+    margin: 20px 0px 20px 0px;
+}
+.form-label {
+    font-size: 18px;
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+.form-input {
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #DAA520;
+}
+.checkbox-input {
+    display: none;
+}
+.checkbox-input:checked + .checkbox-label::after{
+    transform: scale(1);
+}
+.checkbox-label {
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.checkbox-label::before{
+    content: '';
+    align-self: flex-start;
+    flex: 0 0 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #DAA520;
+    border-radius: 4px;
+    margin: 0px 10px 0px 0px;
+
+}
+.checkbox-label::after{
+    content: '';
+    transition: transform .3s ease 0s;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: rgb(0, 153, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    transform: scale(0);
+}
+.form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: #393F47;
+    border: 2px solid #DAA520;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgb(0, 153, 255);
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+.form-button:hover{
+    transform: scale(0.9);
+    box-shadow: none;
+    transition: all .5s ease 0s ;
+} */
+
+

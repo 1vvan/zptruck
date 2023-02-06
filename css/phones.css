@@ -1,0 +1,70 @@
+.phones-block {
+    text-align: center;
+    margin: 30px 0px;
+    margin-top: 50px;
+}
+
+.call-us-text {
+    color: #fff;
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: calc(20px + 20 * (100vw - 320px)/(1920-320));
+    text-decoration: underline;
+    text-decoration-color: #DAA520;
+}
+
+.phones-numbers {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.number {
+    height: 60px;
+    width: 220px;
+    margin: 0px 60px;
+    background-color: #393F47;
+    border: 2px solid #DAA520;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgb(0, 153, 255);
+    transition: all .5s ease 0s;
+    position: relative;
+}
+
+.number a {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 20px;
+    color: #fff;
+    transition: all .5s ease 0s;
+
+}
+
+.number:hover a {
+    color: rgb(0, 153, 255);
+    transform: scale(0.9);
+    transition: all .5s ease 0s;
+}
+
+.number:hover {
+    transform: scale(0.9);
+    box-shadow: none;
+    transition: all .5s ease 0s;
+}
+
+@media (max-width:767px) {
+    .phones-numbers {
+        flex-direction: column;
+    }
+
+    .number {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .number a {
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,147 @@
+@import url('null-style.css');
+
+body{
+    background-color: #2F343A;
+    font-family: Oswald;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content styles */
+
+.main{
+    padding: 70px 0px 0px 0px;
+    flex: 1 0 auto;
+    height: 91vh;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+
+.review-slider {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
+    border: 2px solid #DAA520;
+    border-radius: 5px;
+    background: rgb(218,165,32);
+    background: linear-gradient(90deg, rgba(218,165,32,0.4990589985994398) 40%, rgba(0,153,255,0.5158657212885154) 60%);
+}
+.review-slider-block-text {
+    text-align: center;
+    margin: 50px 0px;
+}
+.review-slider-title {
+    font-weight: 300;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #DAA520;
+    font-size: calc(20px + 20 * (100vw - 320px)/(1920-320));;
+}
+.review-slider-block {
+    position: relative;
+}
+.review-slider-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 0px 50px;
+}
+.review-slider-item-text{
+    color: #fff;
+    font-size: calc(10px + 30 * (100vw - 320px)/(1920-320));;
+    width: 80%;
+}
+.review-slider-item-text .review-slider-text:nth-child(1){
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 153, 255);
+    font-weight: 400;
+}
+.review-slider-item-text .review-slider-text:nth-child(2){
+    margin: 70px 0px 0px 0px;
+    font-weight: 300;
+}
+
+.review-img-user{
+    height: 200px;
+    width: 200px;
+    margin: 0px 0px 0px 10px;
+}
+
+.review-slider-block .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -25px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.review-slider-block .slick-arrow.slick-prev{
+    left: 0;
+    background: url('../images/icons/left-arrow.png') 0 0 / 100% no-repeat;
+}
+.review-slider-block .slick-arrow.slick-next{
+    right: 0;
+    background: url('../images/icons/right-arrow.png') 0 0 / 100% no-repeat;
+}
+
+.review-slider-block .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review-slider-block .slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+/* Активная точка */
+.review-slider-block .slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid #000;
+}
+/* Элемент точки */
+.review-slider-block .slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+@media (max-width:767px){
+    .review-slider-block .slick-arrow{
+        width: 30px;
+        height: 30px;
+    }
+    .review-slider-block  .slick-dots{
+        left: 43%;
+    }
+    .review-slider-block  .slick-dots li button{
+        width: 6px;
+        height: 6px;
+    }
+    .review-slider-item-text{
+        width: 60%;
+    }
+    .review-slider-item-text .review-slider-text:nth-child(2){
+        margin: 20px 0px 0px 0px;
+    }
+    .review-slider-item{
+        margin: 0px 20px 0px 20px;
+    }
+    .review-img-user{
+        width: 100px;
+        height: 100px;
+    }
+}  
+
